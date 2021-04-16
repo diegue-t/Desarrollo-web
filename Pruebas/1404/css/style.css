@@ -1,0 +1,36 @@
+table {
+    width: 300px;
+    height: 300px;
+}
+
+td {
+    border: 2px solid black;
+}
+
+img{
+    width: 200px;
+}
+ /* Normalizador */
+ *{
+     padding: 0px;
+     margin: 0px;
+    box-sizing: border-box; /* Sirve para que las cajas se ajusten al width y al height, hace que disminuya el contenido en vez de aumentar la caja */
+    /* outline: 1px dashed purple; Usar de guía para maquetar, siempre en el selector universal */
+
+ }
+a{
+    text-decoration: none;
+}
+/* Procurar hacer mas clases en vez de poner estilos en los selectores de etiquetas */
+.caja{
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+    /* MODELOS DE CAJA sentidos de las agujas del reloj*/padding: 50px 20px 14px 2px;
+    float: left;
+}
+
+.contenedor{ /* FLOAT */
+    width: 800px;
+    float: right;
+}

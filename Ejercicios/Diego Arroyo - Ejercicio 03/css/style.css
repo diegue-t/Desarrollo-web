@@ -1,0 +1,98 @@
+/* Parametros */
+/* importaciones y variables (configuración) */
+
+/* Normalizadores */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   /*  outline: 1px dashed purple; */
+}
+a{
+    text-decoration: none;
+}
+/* Reglas recursivas (clases que aplicamos a más de un elemento y suelen llevar los !important, para aumentar la prioridad.*/
+.border-none{
+    border: none !important;
+}
+/* Reglas Generales (elementos comunes, que se repiten igual en todos los .html
+-Header
+-Footer
+-chat, login... etc
+-modal 
+-carousel
+-acordeon...) */
+header{
+    /* Dimensión y luego posición SIEMPRE */
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    padding: 30px 4%;
+}
+.logo{
+    width: 50%;
+    float: left;
+}
+.menu_desk{
+    width: 50%;
+    font-size: 24px;
+    float: right;
+    text-align: right;
+    margin-top: 5px;
+}
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: #000;
+    color: #fff;
+}
+footer ul{
+    width: 33.333%;
+    height: 100%;
+    float: left;
+    border-right: thin solid #fff;
+    padding: 10px 40px;
+}
+/* Reglas específicas */
+.menu_desk a{
+    color: white;
+    margin-right: 10px;
+    border-right: thin solid #fff;
+    padding-right: 10px;
+}
+.main1{
+    width: 100%;
+    height: 500px;
+    text-align: center; 
+}
+.main1 img{
+    height: 100%;
+}
+.iz{
+    width: 80%;
+    height: 100%;
+    float: left;
+}
+.iz div,
+.iz p{
+    width: 50%;
+    height: 50%;
+    float:left;
+    border: thin solid #000;
+    padding: 20px;
+}
+.de{
+    width: 20%;
+    height: 100%;
+    float: left;
+    background-color: orange;
+}
+.de div,
+.de p {
+    width: 100%;
+    height: 25%;
+    border-bottom: thin solid #fff;
+    padding: 15px;
+}
+/* Responsive */

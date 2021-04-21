@@ -1,0 +1,56 @@
+/* Parametros */
+    
+/* Normalizadores */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: 1px dashed purple;
+}
+/* Reglas recursivas */
+
+/* Reglas generales */
+header{
+    width: 100%;
+    height: 66px;
+}
+footer {
+    width: 100%;
+    height: 855px;
+}
+/* Reglas Especificas */
+.carrusel{
+    width: 100%;
+    height: 720px;
+}
+.s1container{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+.s1{
+    width: 100%;
+    height: 720px;
+}
+.s2{
+    width: 100%;
+    height: 1530px;
+}
+.s2 div{
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+.s3{
+    width: 100%;
+    height: 975px;
+}
+.s4{
+    width: 100%;
+    height: 1022px;
+}
+.s5{
+    width: 100%;
+    height: 1022px;
+}
+/* Responsive */

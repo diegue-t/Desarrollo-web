@@ -35,11 +35,16 @@ footer {
 .s2{
     width: 100%;
     height: 1530px;
+    /*flex*/
+    display: flex;
+    flex-wrap: wrap;/* Es una propiedad de padre */
 }
 .s2 div{
     width: 50%;
     height: 50%;
-    float: left;
+}
+.imgcoche1{
+    background-image: url(../img/home-01-960x710.jpg);
 }
 .s3{
     width: 100%;

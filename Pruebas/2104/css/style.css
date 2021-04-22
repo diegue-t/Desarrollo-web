@@ -1,0 +1,52 @@
+/* Parametros */
+    
+/* Normalizadores */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+/*     outline: 2px dashed purple;
+ */}
+/* Reglas recursivas */
+
+/* Reglas generales */
+.contenedor{
+    width: 600px;
+    height: 600px;
+    border: 3px solid black;
+    margin: 50px auto;
+    /* Flex */
+    display: flex;
+    flex-direction: row row-reverse column column-reverse;
+    /* Define el eje principal
+     row: eje principal x
+     column: eje principal y*/
+     justify-content: space-between space-around space-evenly;
+     /* ALINEAR Y DISTRIBUIR EL EJE PRINCIPAL */
+     align-items: flex-end flex-start ;
+     /* Alinear y distribuir el eje secundario */
+     flex-wrap: nowrap wrap;
+     /* PAra hacer o no overflow en una caja, adapta el contenido en nowrap, si tenemos el flex-wrap en wrap tenemos que ajustar align-content */
+     flex-flow: column wrap;
+     /* Flex wrap+flex direction */
+}
+
+.hijos{
+    height: 100px;
+    background-color: red;
+    border: thin solid white;
+    color: white;
+
+/*     flex-grow: 1;
+ */    /* Es un índice de crecimiento del elemento */
+    flex-shrink: 1;
+    align-self: flex-start;
+    order: ;
+    /* Nos permite cambiar el orden de los elementos sin cambiar el flujo de texto */
+}
+.c2{
+    flex-grow: 2;
+}
+/* Reglas Especificas */
+
+/* Responsive */

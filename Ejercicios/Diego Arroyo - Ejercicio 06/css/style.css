@@ -1,0 +1,94 @@
+/* Parametros */
+    
+/* Normalizadores */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: 1px dashed purple;
+}
+a{
+    text-decoration: none;
+    /*flex*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Reglas recursivas */
+
+/* Reglas generales */
+    /* Marco */
+    .marco{
+        width: 100%;
+        max-width: 1280px;
+        margin: auto;
+    }
+    header{
+        width: 100%;
+        height: 100px;
+        background-color: #333;
+        padding: 0% 4%;
+        /*flex*/
+        display: flex;
+        justify-content: space-between; /* Usar siempre space-between y aplicar padding */
+        align-items: center; /* para centrar los elementos en el eje y */
+    }
+    /* Logo */
+    .logo{
+        color: white;
+        font-size: 30px;
+    }
+    .menu_desk{
+        /*flex*/
+        display: flex;/* no creamos ni width ni height (dimensiones) para poder aumentar o disminuir los elementos hijos, en este caso los enlaces a. Asi siempre se ajusta a la estructura del contenido hijo y no se rompe la estructura 
+        NO PONEMOS DIMENSIONES AL PADRE SI NO QUE PONEMOS DIMENSIONES ABSOLUTAS AL HIJO  */
+    }
+    .menu_desk a{
+        width: 100px; /* ponemos en pixeles el area del enlace, para poder aumentar el area de zona clicable */
+        height: 50px;
+        color: white;
+        margin-right: 10px;
+    }
+    footer{
+        width: 100%;
+        height: 120px;
+        background-color: #333;
+        /*flex*/
+        display: flex;
+    }
+    footer ul{
+        width: 33.33%;
+        height: 100%;
+        padding: 15px 40px;
+    }
+/* Reglas Especificas */
+    /* Main S1 */
+    .s1{
+        width: 100%;
+        height: 500px;
+        /*flex*/ /* Para que posicione a las clases iz y de */
+        display: flex;
+    } 
+    .iz{
+        width: 80%;
+        height: 100%;
+        /*flex*/
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .iz p,
+    .iz div{
+        width: 50%;
+        height: 50%;
+    }
+    .de{
+        width: 20%;
+        height: 100%;
+        background-color: #f3f3f3;
+    }
+    .de p,
+    .de div{
+        width: 100%;
+        height: 25%;
+    }
+/* Responsive */

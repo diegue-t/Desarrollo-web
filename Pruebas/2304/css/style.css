@@ -1,0 +1,30 @@
+/* Parametros */
+    
+/* Normalizadores */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: 2px dashed purple;
+}
+/* Reglas recursivas */
+i{
+/*     width: 100px;
+    height: 100px; */
+    font-size: 30px;
+}
+.caja1{
+    /* https://html-css-js.com/css/generator/box-shadow/ */
+}
+.caja {
+    width: 300px;
+    height: 300px;
+    background-image: url() linear-gradient(lightblue, blue, darkblue);
+    /* CSSGradient.io */
+}
+
+/* Reglas generales */
+
+/* Reglas Especificas */
+
+/* Responsive */

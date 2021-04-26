@@ -1,16 +1,181 @@
 /* Parametros */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
     
 /* Normalizadores */
     *{
         padding: 0px;
         margin: 0px;
         box-sizing: border-box;
-        outline: 2px dashed purple;
+        outline: 1px dashed purple;
     }
-/* Reglas recursivas */
+    a{
+        text-decoration: none;
+        font-family: 'Merriweather', serif;
+        /*flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        font-family: 'Merriweather', serif;
+        font-weight: 400;
+    }
+    h1{
+        font-size: 64px;
+    }
+    h2{
+        font-size: 40px;
+        color: #683d4a;
+    }
+    h3{
+        font-size: 24px;
+        color: #ffa900;
+    }
+    h4{
+        font-size: 18px;
+        color: #683D4A;
+    }
+    p{
+        font-size: 16px;
+    }
+    /* Reglas recursivas */
+    .btn-orange{
+        width: 180px;
+        height: 60px;
+        background-color: #ffa900;
+        border-radius: 5px;
+        color: #fff;
+    }
+    .margin-none{
+        margin: 0px !important;
+    }
+    /* Reglas generales */
+    .marco{
+        width: 100%;
+        max-width: 1280px;
+        margin: auto;
+    }
+    header{
+        width: 100%;
+        height: 130px;
+        padding: 0% 5%;
+        /*flex*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        width: 200px;
+        height: 70px;
+        justify-content: space-between;
+    }
+    .logo h1{
+        font-size: 26px;
+        color: #683d4a;
+        line-height: 1.1;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+    .logo p{
+        font-size: 12px;
+        color: #BDB9C2;
+        font-weight: 200;
+    }
+    /* menu escritorio */
+    .menu_desk{
+        /*flex*/
+        display: flex;
+    }
+    .menu_desk a{
+        width: 100px;
+        height: 50px;
+        font-size: 14px;
+        color: #292929;
+    }
+    /* Reglas Especificas */
+    .s1{
+        width: 100%;
+        height: 730px;
+        background-image: url(../img/mt-1174-home-header-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 0% 5%;
+        /*flex*/
+        display: flex;
+        align-items: center;
+    }
+    .s1_content{
+        color: #fff;
+    }
+    .s1_content p{
+        font-size: 20px;
+        font-family: 'Merriweather', serif;
+        font-weight: 700;
+    }
+    .botonera{
+        /*flex*/
+        display: flex;
+    }
+    .btn-outline{
+        width: 180px;
+        height: 60px;
+        border: thin solid #fff;
+        border-radius: 5px;
+        color: #fff;
+        margin: 0px 70px;
+    }
+    .btn-outline i {
+        margin-right: 10px;
+    }
 
-/* Reglas generales */
-    
-/* Reglas Especificas */
-
-/* Responsive */
+    /* Seccion 2 */
+    .s2{
+        width: 100%;
+        height: 750px;
+        padding: 0% 5%;
+        /*flex*/
+        display: flex;
+        align-items: center;
+    }
+    .s2 h2{
+        width: 75%;
+    }
+    .contenedor_serv{
+        margin-top: 60px;
+        text-align: center;
+        /*flex*/
+        display: flex;
+    }
+    .servicios{
+        margin: 0 20px;
+    }
+    .servicios p{
+        font-family: 'Open sans', sans-serif;
+        line-height: 1.5;
+        color: #a9a196;
+        margin-top: 30px;
+    }
+    .servicios h4{
+        margin: 10px 0;
+    }
+    .servicios h3{
+        margin-top: 20px;
+    }
+/* Seccion 4 */
+    .s4{
+        width: 100%;
+        height: 680px;
+        background-image: url(../img/mt-1174-home-parallax1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 0% 5%;
+        /*flex*/
+        display: flex;
+        align-items: center;
+    }
+    .s4_content h2{
+        color: #fff;
+    }
+    /* Responsive */

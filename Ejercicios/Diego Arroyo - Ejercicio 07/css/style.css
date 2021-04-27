@@ -28,7 +28,7 @@
         color: #683d4a;
     }
     h3{
-        font-size: 24px;
+        font-size: 30px;
         color: #ffa900;
     }
     h4{
@@ -45,10 +45,12 @@
         background-color: #ffa900;
         border-radius: 5px;
         color: #fff;
+        transition: all 300ms;/*  se pone siempre en el selector normal, nunca en el pseudoselector */
     }
-    .margin-none{
-        margin: 0px !important;
+    .btn-orange:hover{
+        background-color: #a9a196;
     }
+
     /* Reglas generales */
     .marco{
         width: 100%;
@@ -86,11 +88,15 @@
         /*flex*/
         display: flex;
     }
+    .menu_desk :last-child{
+        margin: 0px;
+    }
     .menu_desk a{
         width: 100px;
         height: 50px;
         font-size: 14px;
         color: #292929;
+        margin-right: 10px;
     }
     /* Reglas Especificas */
     .s1{
@@ -114,6 +120,7 @@
         font-weight: 700;
     }
     .botonera{
+        padding-top: 20px;
         /*flex*/
         display: flex;
     }
@@ -124,6 +131,11 @@
         border-radius: 5px;
         color: #fff;
         margin: 0px 70px;
+        transition: all 300ms;
+    }
+    .btn-outline:hover{
+        background-color: #ffa900;
+        border: none;
     }
     .btn-outline i {
         margin-right: 10px;
@@ -149,6 +161,12 @@
     }
     .servicios{
         margin: 0 20px;
+        padding: 30px 0;
+        transition: border 300ms;
+        border: 2px solid transparent;
+    }
+    .servicios:hover{
+        border: 2px solid #ffa900;
     }
     .servicios p{
         font-family: 'Open sans', sans-serif;
@@ -175,7 +193,60 @@
         display: flex;
         align-items: center;
     }
-    .s4_content h2{
+    .s4_contentiz{
+        width: 50%;
+    }
+    .s4_contentiz h2{
+        font-size: 40px;
         color: #fff;
+    }
+    .s4_contentiz h3{
+        padding-top: 30px;
+    }
+    .s4_contentiz h5{
+        font-family: 'Merriweather' , serif;
+        font-size: 18px;
+        color: #fff;
+    }
+    .s4_contentiz p{
+        padding-top: 15px;
+        font-family: 'Open sans' , sans-serif;
+        font-size: 16px;
+        color: #a9a196;
+    }
+    .s4_contentde{
+        width: 45%;
+        padding-left: 5%;
+        /*flex*/
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hora{
+        width: 100px;
+        height: 100px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        /*flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .s4_contentde span{
+        font-size: 25px;
+        color: white;
+    }
+    .countdown_number{
+        color: #fff;
+        font-style: 'Open sans', sans-serif;
+        font-weight: 400;
+        font-size: 27px;
+    }
+    .countdown_unit{
+        color: #ffa900;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
     }
     /* Responsive */

@@ -1,0 +1,72 @@
+/* Estructura pseudoselector */
+
+selector:pseudoselector{
+
+    /* Pseudoselector de enlaces */
+}
+a:link{
+    color: green;
+}
+/* link aplica a enlaces sin visitar */
+a:visited{
+    color: red;
+}
+/* visited aplica a enlaces visitados */
+/* podemos aplicarlo a selectores, clases e ids
+Lo normal es normalizar link y visited si quieres que el usuario lo distinga y no en el color directamente. */
+
+    /* Pseudoselector de acción */
+
+    .caja{
+        width: 300px;
+        height: 300px;
+        background-color: red;
+    }
+    .caja:hover{
+        background-color: darkgreen;
+    }
+    .caja:active{
+        background-color: darkorange;
+    }
+    /* Focus / Tab index es la capacidad de ser enfocado. Solo se aplica a elementos que podamos interactuar con ellos, no elementos estructurales.
+    etiquetas con tab index:
+    input
+    a
+    button
+    */
+    button:focus,
+    a:focus{
+        background-color: darkviolet;
+        padding: 0 15px;
+    }
+
+/*     Pseudoselectores de posición */
+
+.padre{
+    width: 500px;
+    border: 3px solid black;
+    margin: 50px auto;
+    text-align: center;
+}
+.padre div{
+    height: 50px;
+    border: thick solid black;
+}
+
+.padre :first-child{ /* Firtst child y last child podemos usarlo para quitar sobrantes en el nav o ejemplos asi en vez de usar clases recursivas */
+    background-color: darkred;
+    color: white;
+}
+.padre :last-child{
+    background-color: teal;
+    color: white;
+}
+
+.padre :nth-child(5){ /* tres valores: numero del hijo, even, odd y funciones progresivas (4n-2) */
+    background-color: turquoise;
+}
+
+.padre :first-of-type y :last-of-type{/* Selecciona el primero de cada nombre  */
+    
+}
+

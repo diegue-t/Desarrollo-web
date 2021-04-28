@@ -38,6 +38,14 @@
     p{
         font-size: 16px;
     }
+
+    button{
+        border: none;
+        /*flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     /* Reglas recursivas */
     .btn-orange{
         width: 180px;
@@ -50,7 +58,6 @@
     .btn-orange:hover{
         background-color: #a9a196;
     }
-
     /* Reglas generales */
     .marco{
         width: 100%;
@@ -188,29 +195,16 @@
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        padding: 10% 5%;
-        /*flex*/
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .s4 > div{/* El > sirve para que el selector de hijo descendente se vea afectado, y no a los nietos */
-        width: 49%;
-        height: 47%;
-    }
-    .s4_reloj{
-        width: 112px;
-        height: 112px;
-        border-radius: 50%;
-        border: 2px solid white;
+        padding: 10% 0 0 5% ;
         /*flex*/
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
-    .s4_contentiz{
-        width: 50%;
+    .s4 > div{/* El > sirve para que el selector de hijo descendente se vea afectado, y no a los nietos */
+        width: 49%;
+        height: 47%;
     }
     .s4_contentiz h2{
         font-size: 40px;
@@ -231,14 +225,13 @@
         color: #a9a196;
     }
     .s4_contentde{
-        width: 50%;
-        padding-left: 5%;
+        padding-right: 5%;
         /*flex*/
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .hora{
+    .circulo{
         width: 100px;
         height: 100px;
         border: 2px solid #fff;
@@ -253,19 +246,33 @@
         font-size: 25px;
         color: white;
     }
-    .countdown_number{
+    .circulo > span{
         color: #fff;
         font-style: 'Open sans', sans-serif;
         font-weight: 400;
         font-size: 27px;
     }
-    .countdown_unit{
+    .circulo > p{
         color: #ffa900;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
     }
-    .s4_contentform{
-
+    .s4_contentform input{
+        width: 380px;
+        height: 60px;
+        padding: 5px 15px;
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: #a9a196;
     }
+    .s4_contentform button{
+        font-size: 16px;
+        font-family: 'Merriweather' , serif;
+    }
+    .s5{
+        width: 100%;
+        height: 910px;
+    }
+
     /* Responsive */

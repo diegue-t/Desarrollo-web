@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- 
+    Ver en www.lenguajeshtml.com
+    
+    TIPOS
+    1. texto
+    2. número
+    3. fecha
+    4. listas de sección
+    5. botones
+    6. otros 
+
+
+type son tipos
+name para recibir datos
+value el valor que recibe el form.
+
+ -->
+
+
+    <form action="gracias.html" method="POST" enctype="multipart/form-data"> 
+        <input type="text" placeholder="Usuario" name="Usuario">
+        <input type="password" placeholder="Contraseña" name="password">
+        <input type="file">
+        <input type="url">
+        <input type="mail">
+        <textarea name=""></textarea>
+        <input type="hidden" name="Campaña-facebook/instagram" value="instagram">
+        <input type="number" min="" max="" step="saltos">
+        <input type="range" name=""><br>
+        <input type="date"><br>
+        <input type="time"><br>
+        <input type="color"><br>
+        <select name="">
+            <option value="1">Lunes</option>
+            <option value="2">Martes</option>
+            <option value="3">Miércoles</option>
+        </select>
+
+        <!-- Checkbox seleccion multiple -->
+        <h2>Lista de vehículos</h2>
+
+        <label for="check1">Coche</label>
+        <input type="checkbox" name="" id="check1" value="coche">
+        <label for="check2">Moto</label>
+        <input type="checkbox" name="" id="check2" value="moto">
+        <label for="check3">Bicicleta</label>
+        <input type="checkbox" name="" id="check3" value="bicicleta">
+
+        <!-- Radio selección única -->
+        <label for="rad1">Coche</label>
+        <input type="radio" name="vehi" value="coche" id="rad1">
+        <label for="rad2">Moto</label>
+        <input type="radio" name="vehi" value="moto" id="rad2">
+        <label for="rad3"> Bicicleta</label>
+        <input type="radio" name="vehi" value="bicicleta" id="rad3">
+
+        <input type="text" placeholder="nombre" name="name" value="Andrea">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" onclick="alert('hola clase')">Javascript</button>
+
+    </form>
+        <!-- el valor autocomplete se puede poner en el input o en el padre (form) para que te salgan o no sugerencias de otros formularios similares. en input type date autocomplete off SIEMPRE -->
+
+        <!-- Atributo vacio o booleano (required) (autofocus) -->
+
+        <!-- maxlenght="máximo de caracteres que podemos escribir en el input" minlenght="mínimo de caracteres que nos permite escribir" -->
+
+<!--        El método get envia la info por la url (barra de búsqueda, todo el mundo lo ve, no es segura para info sensible, passwords, bancos...) 
+            El método POST lo envía como paquete de datos -->
+
+            <!-- Script php para enviar datos por correo electrónico -->
+
+    <!-- JS Framework -->
+    <!-- JS Propio -->
+</body>
+</html>

@@ -101,6 +101,50 @@
     height: 517px;
     background-color: #fff;
 }
-
+.s4{
+    width: 100%;
+    height: 500px;
+    /*flex*/
+    display: flex;
+    flex-wrap: wrap;
+}
+.s4 > div{
+    width: 33.3%;
+    height: 50%;
+    position: relative;
+    z-index: 1;
+    /*flex*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s4 > div:hover .overlay-g{
+    background-color: rgba(69, 138, 255, .8);}
+.s4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/* equivalente a background-size pero para etiquetas img */
+    object-position: center; /* equivalente a background-position: ; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+.overlay-g{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(69, 138, 255, .2);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    transition: all 1s;
+}
+.gallery-text{
+    color: white;
+    position: relative;
+    z-index: 4;
+    text-align: center;
+}
 
 /* Responsive */

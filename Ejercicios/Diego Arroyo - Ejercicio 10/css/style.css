@@ -48,9 +48,16 @@
         width: 150px;
         height: 50px;
         background-color: #d7b633;
+        border: 2px solid transparent;
         font-weight: 700;
         color: black;
         text-transform: capitalize;
+        transition: all .3s;
+    }
+    .btn_order:hover{
+        background-color: white;
+        border: 2px solid #d7b633;
+        color: #d7b633;
     }
     .text_pricing{
         font-size: 14px;
@@ -71,11 +78,14 @@
     }
     header{
         width: 100%;
+        max-width: 1280px;
         height: 190px;
+        margin: auto;
         padding: 25px 4% 0px;
         position: absolute;
         top: 0px;
         left: 0px;
+        right: 0px; /* Siempre que queramos definir la posicion de algun elemento que rompa el flujo de texto definimos left y right para poder usar margin auto para que tenga referencia. */
         z-index: 1000;
     }
     /* LOGO */
@@ -115,6 +125,26 @@
         background-color: #d7b633;
         font-size: 14px;
         color: black;
+    }
+
+    .bloqueo{
+        width: 100%;
+        height: 100vh;
+        background-color:rgba(168, 168, 168, 0.9);
+        color: white;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 1004;
+        display: none;
+    } 
+    .bloqueo h1{
+        padding: 150px 200px;
+    }
+    @media (orientation:landscape) and (max-width: 1024px){
+        .bloqueo{
+            display: block;
+        }
     }
 /* Reglas Especificas */
     .s1{
@@ -264,6 +294,9 @@
     .s1_content a{
         margin: 20px 0px;
     }
+    .s1_content a:hover{
+        
+    }
     
     .s2{
         /*flex*/
@@ -282,17 +315,30 @@
     .s4_content{
         /*flex*/
         display: flex;
+        padding: 5% 0px;
     } 
-    
     .box_pricing{
-        margin-top: 5%;
+        margin-top: initial;
         margin-right: 30px;
         padding: 5% 0px;
     }
     .box_pricing:last-child{
         margin-right: 0px;
     }
+    .box_pricing h5{
+        font-size: 22px;
+    }
+    .box_pricing h6{
+        font-size: 18px;
+    }
+
+    /* Reglas recursivas */
+    .text_pricing{
+        font-size: 15px;
+    }
 }
+
+
 /* Media laptop 1280*/
 @media (min-width: 1280px){
     /* Normalizadores */
@@ -304,12 +350,16 @@
         color: #090009
     }
     p{
-        font-size: 21px;
+        font-size: 19px;
     }
     /* Reglas recursivas */
     .btn_order{
         width: 190px;
         margin: 30px 0;
+    }
+    .desc_pricing{
+        font-size: 19px;
+        padding: 0px 6%;
     }
     /* Reglas Generales */
         /* Menu desk */
@@ -327,7 +377,10 @@
         .s1{
             height: 900px;
             padding: 210px 4% 0px;
-            }
+        }
+        .s1 p{
+            font-size: 21px;
+        }
         .amy::before{
             width: 3px;
             height: 90px;
@@ -341,5 +394,11 @@
         }
         .s2_price{
             font-size: 25px;
+        }
+        .box_pricing h5{
+            font-size: 26px;
+        }
+        .box_pricing h6{
+            font-size: 20px;
         }
 }/* faltan detalles de padding margin y tamaños de letra */

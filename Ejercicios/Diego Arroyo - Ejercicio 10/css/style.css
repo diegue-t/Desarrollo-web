@@ -5,7 +5,7 @@
         padding: 0px;
         margin: 0px;
         box-sizing: border-box;
-       /*  outline: 2px dashed purple; */    
+        /* outline: 2px dashed purple;     */
 }
     h1, h2, h3, h4, h5, h6{
         font-family: 'Playfair Display', serif;
@@ -28,6 +28,7 @@
     a{
         font-family: 'Cinzel', serif;
         text-decoration: none;
+        font-weight: 700;
         /*flex*/
         display: flex;
         justify-content: center;
@@ -47,10 +48,19 @@
         width: 150px;
         height: 50px;
         background-color: #d7b633;
-        margin: 20px 0;
         font-weight: 700;
         color: black;
         text-transform: capitalize;
+    }
+    .text_pricing{
+        font-size: 14px;
+        color: #767676;
+    }
+    .desc_pricing{
+        margin: 8% 0px;
+        padding: 0px 4%;
+        font-size: 16px;
+        color: #A7A5A5;
     }
 /* Reglas generales */
         /* Marco */
@@ -70,7 +80,7 @@
     }
     /* LOGO */
     .logo{
-        width: 155px;
+        width: 176px;
         height: 50px;
     }
     .logo h1{
@@ -148,7 +158,6 @@
     }
     .s2{
         width: 100%;
-        height: 620px;
         padding: 150px 4% 0px;
     }
     .s2 img{
@@ -162,6 +171,28 @@
         color: #A7A5A5;
         line-height: 1.5;
     }
+    .s2_content .btn_order{
+        margin: 20px 0;
+    }
+    .s4{
+        width: 100%;
+        padding: 30px 4% 0px;
+        text-align: center;
+        background-color: #fafafa;
+    }
+    .box_pricing{
+        width: 100%;
+        margin-top: 10%;
+        padding: 10% 0;
+        background-color: #f4f4f4;
+    }
+    .box_pricing h6{
+        margin: 6% 0px 8%;
+    }
+    .box_pricing .btn_order{
+        margin: auto;
+    }
+
 
 
 
@@ -194,28 +225,121 @@
         justify-content: space-between;
         align-items: center;
     }
+    .logo h1{
+        font-size: 25px;
+    }
     /* Menu_mob */
     .btn_menu_mobile{
-        
         display: none;
     }
     /* Menu desk */
     .menu_desk{
-        margin-left: 123px;
+        margin-left: 70px;
         /*flex*/
         display: flex;
     }
     .menu_desk a{
         color: white;
-        width: 65px;
         height: 50px;
+        margin-right: 20px;
         font-family: 'Faustina', serif;
+        font-weight: 400;
+    }
+    .menu_desk a:last-child{
+        margin-right: 0px;
+    }
+    .rrss a:last-child{
+        margin-right: 0px;
     }
     /* Reglas Específicas */
+    .s1{
+        padding: 145px 4% 0px;
+    }
     .s1_content{
         width: 50%;
+    }
+    .s1_content p{
+        padding-right: 3px;
     }
     .s1_content a{
         margin: 20px 0px;
     }
+    
+    .s2{
+        /*flex*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 65px 4%;
+    }
+    .s2_img{
+        width: 50%;
+    }
+    .s2_content {
+        width: 40%;
+        margin-right: 50px;
+    }
+    .s4_content{
+        /*flex*/
+        display: flex;
+    } 
+    
+    .box_pricing{
+        margin-top: 5%;
+        margin-right: 30px;
+        padding: 5% 0px;
+    }
+    .box_pricing:last-child{
+        margin-right: 0px;
+    }
 }
+/* Media laptop 1280*/
+@media (min-width: 1280px){
+    /* Normalizadores */
+    h1, h4{
+        font-size: 100px;
+    }
+    h2, h5{
+        font-size: 45px;
+        color: #090009
+    }
+    p{
+        font-size: 21px;
+    }
+    /* Reglas recursivas */
+    .btn_order{
+        width: 190px;
+        margin: 30px 0;
+    }
+    /* Reglas Generales */
+        /* Menu desk */
+        .logo h1{
+            font-size: 30px;
+        }
+        .menu_desk{
+            margin-left: 420px;
+            /*flex*/
+            display: flex;
+        }
+        .menu_desk a{
+            margin-right: 30px;
+        }   /* Reglas Específicas */
+        .s1{
+            height: 900px;
+            padding: 210px 4% 0px;
+            }
+        .amy::before{
+            width: 3px;
+            height: 90px;
+        }
+        .s1_content img{
+            margin: 0px 40px 0px 0px;
+        }
+        .s1_content a {
+            width: 190px;
+            margin: 40px 0px;
+        }
+        .s2_price{
+            font-size: 25px;
+        }
+}/* faltan detalles de padding margin y tamaños de letra */

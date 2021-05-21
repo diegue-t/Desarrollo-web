@@ -125,6 +125,11 @@
         background-color: #d7b633;
         font-size: 14px;
         color: black;
+        transition: all .3s;
+    }
+    .rrss a:hover{
+        background-color: white;
+        color: #d7b633;
     }
 
     .bloqueo{
@@ -171,12 +176,16 @@
         background-color: white;
         margin: 20px auto;
         color: black;
+        transition: all 0.3s;
     }
-    .amy{
+    .s1_content a:hover{
+        background-color: #d7b633;
+    }
+    .s1_content h1{
         color: #d7b633;
         text-transform: capitalize;
     }
-    .amy::before{
+    .s1_content h1::before{
         content: "";
         display: inline-block;
         width: 2px;
@@ -215,6 +224,10 @@
         margin-top: 10%;
         padding: 10% 0;
         background-color: #f4f4f4;
+        transition: all .3s;
+    }
+    .box_pricing:hover{
+        background-color: #dbdbdb;
     }
     .box_pricing h6{
         margin: 6% 0px 8%;
@@ -293,9 +306,6 @@
     }
     .s1_content a{
         margin: 20px 0px;
-    }
-    .s1_content a:hover{
-        
     }
     
     .s2{
@@ -381,7 +391,7 @@
         .s1 p{
             font-size: 21px;
         }
-        .amy::before{
+        .s1_content h1::before{
             width: 3px;
             height: 90px;
         }
@@ -401,4 +411,4 @@
         .box_pricing h6{
             font-size: 20px;
         }
-}/* faltan detalles de padding margin y tamaños de letra */
+    }

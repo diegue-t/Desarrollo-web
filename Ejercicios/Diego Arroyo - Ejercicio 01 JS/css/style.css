@@ -1,16 +1,32 @@
-/* Parametros */
-    
-/* Normalizadores */
-    *{
-        padding: 0px;
-        margin: 0px;
-        box-sizing: border-box;
-        outline: 2px dashed purple;
-    }
-/* Reglas recursivas */
+.caja1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: all .3s;
+}
 
-/* Reglas generales */
-    
-/* Reglas Especificas */
-
-/* Responsive */
+#btn_tam{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+#caja3{
+    position: absolute;
+    top: 600px;
+    left: 500px;
+    background-color: blue;
+}
+#btn_form{
+    position: absolute;
+    top: 700px;
+    left: 500px;
+}
+#caja4{
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    transition: all 1s;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+/* Objeto */
+
+.botella{
+    forma: rectangulo;
+    color: transparent;
+    tapon: blanco;
+    etiqueta: azul;
+}
+/* Metodo - Es una tarea o funcion que realiza el objeto */
+.botella
+    abrir
+    beber
+    contener
+    cerrar

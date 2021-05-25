@@ -1,0 +1,35 @@
+/* Parametros */
+    
+/* Normalizadores */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: 2px dashed purple;
+}
+/* 
+1. min-width = mobile
+2. max- width = desktop
+3. Rangos
+4. Orientaciones
+*/
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #333;
+}
+
+/* @media rango (768 - 1024px) */
+/*           Desde                    Hasta        */
+@media (min-width: 768px) and (max-width: 1024px){
+    header{
+        background-color: darkgreen;
+    }
+}
+/* Orientacion */
+@media (orientation:landscape) and (max-width: 1024px){
+    body{
+        background-color: #efefef;
+    }
+}

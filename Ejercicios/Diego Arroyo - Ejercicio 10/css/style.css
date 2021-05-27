@@ -110,7 +110,6 @@
     /* Menu mobile */
     .menu_mob{
         width: 90%;
-        color: white;
         background-color: #d7b633;
         padding: 10px 20px;
         position: absolute;
@@ -120,6 +119,14 @@
         margin: auto;
         z-index: 2000;
         display: none;
+    }
+    .menu_mob a{
+        margin: 10px 0;
+        color: white;
+        font-family: 'Faustina', serif;
+        font-weight: 400;
+        text-transform: initial;
+        justify-content: left;
     }
     .btn_menu_mobile{
         width: 40px;

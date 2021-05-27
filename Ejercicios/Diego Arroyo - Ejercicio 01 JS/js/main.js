@@ -37,7 +37,9 @@ btn_form.addEventListener('click', function () {
 /* Ocultar caja4 */
 caja4.addEventListener('mouseenter', function () {
     caja4.style.backgroundColor = "black";
+    caja4.style.color = "white"
 })
 caja4.addEventListener('mouseleave', function () {
-    caja4.style.backgroundColor = "white"
+    caja4.style.backgroundColor = "white";
+    caja4.style.color = "black"
 });

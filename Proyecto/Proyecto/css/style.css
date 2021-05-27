@@ -34,6 +34,11 @@ a{
     justify-content: center;
     align-items: center;
 }
+h1{
+    font-family: 'MaisonNeue-light', Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    line-height: 105%;
+}
 /* Reglas recursivas */
 
 /* Reglas generales */
@@ -59,15 +64,20 @@ header{
     margin-right: 8px;
 }
 .logo h1{
-    font-family: 'MaisonNeue-mono';
+    font-family: 'MaisonNeue-mono', Arial, Helvetica, sans-serif;
     font-size: 13px;
     letter-spacing: -1.5px;
     color: #000;
 }
 .menu_mob{
-    font-family: 'MaisonNeue-demi';
+    font-family: 'MaisonNeue-demi', Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 /* Reglas Especificas */
-
+.s1{
+    padding: 0px 5%;
+}
+.s1 h1{
+    padding-top: 105px;
+}
 /* Responsive */

@@ -69,6 +69,14 @@
         font-size: 16px;
         color: #A7A5A5;
     }
+    .js-d-block{
+        display: block !important;
+    }
+
+    .js-btn-gold{
+        color: white !important; 
+        background-color: #d7b633 !important;
+    }
 /* Reglas generales */
         /* Marco */
     .marco{
@@ -100,6 +108,19 @@
         text-transform: capitalize;
     }
     /* Menu mobile */
+    .menu_mob{
+        width: 90%;
+        color: white;
+        background-color: #d7b633;
+        padding: 10px 20px;
+        position: absolute;
+        top: 137px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        z-index: 2000;
+        display: none;
+    }
     .btn_menu_mobile{
         width: 40px;
         height: 40px;
@@ -271,7 +292,9 @@
     .logo h1{
         font-size: 25px;
     }
+    
     /* Menu_mob */
+  
     .btn_menu_mobile{
         display: none;
     }
@@ -412,3 +435,13 @@
             font-size: 20px;
         }
     }
+
+    /* 
+        Rangos de z-index 
+    ------------------------------
+    Marco dentro = 0 - 999
+    Header = 1000 - 1499
+    Overlay = 1500 -1999
+    menu/modales = +2000
+    ------------------------------
+    */

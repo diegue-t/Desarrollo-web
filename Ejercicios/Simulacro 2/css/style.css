@@ -1,0 +1,241 @@
+/* Parametros */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap');
+/* Normalizadores */
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        outline: 2px dashed purple;
+        color: white;
+    }
+    a{  
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        text-decoration: none;
+        /*flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 95%;
+        text-align: center;
+        }
+    h2{
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        text-align: center;
+        }
+    h3{
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+    }
+    h4{
+        font-family: 'Poppins', sans-serif;
+        font-size: 11px;
+        font-weight: 200;
+        text-align: center;
+    }
+    p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+    }
+/* Reglas recursivas */
+    .btn-green{
+        padding: 5px 10px;
+        background-color: #5caf01;
+        border-radius: 7px;
+        font-weight: 300;
+    }
+/* Reglas generales */
+    .marco{
+        width: 100%;
+        max-width: 1280px;
+        margin: auto;
+    }
+    header{
+        background-color: #222a35;
+        padding: 2% 4%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        z-index: 1000;
+        /*flex*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo img{
+        width: 43px;
+        height: 43px;
+    }
+    header i {
+        font-size: 30px;
+    }
+    .menu_desk{
+        display: none;
+    }
+/* Reglas Especificas */
+    .s1{
+        width: 100%;
+        padding: 200px 3%;
+        background-image: url(../img/slide01.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .s1 h1{
+        margin: 20px 0px 35px 0px; 
+    }
+    .s1 p{
+        font-size: 11px;
+    }
+    .search{
+        padding: 20px 3%;
+    /*flex*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    input[type="search"] {
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 7px;
+        margin-right: 10px;
+    }
+    
+    .cursos{
+        display: none;
+    }
+    .separador{
+        padding: 25px 0;
+        background-color: #5caf01;
+        text-align: center;
+    }
+    .cont{
+        margin: 0 0 30px 0px;
+    }
+    .cont i{
+        font-size: 35px;
+    }
+/* Responsive */
+
+/* Tablet */
+@media (min-width: 767px){
+  
+    /* Normalizadores */ 
+
+    h1{
+        font-size: 53px;
+        
+        }
+    h4{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
+
+    /* Reglas recursivas */
+    .btn-green{
+        width: 150px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    /* específicas */
+    .s1 p{
+        font-size: 16px;
+    }
+    input[type="search"] {
+        width: 400px;
+        height: 40px;
+    }
+    .cursos{
+        width: 360px;
+        height: 360px;
+        margin: 40px auto ;
+        display: initial;
+        /*flex*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .caja{
+        width: 110px;
+        height: 110px;
+    }
+    .separador{
+        padding: 5%;
+        /*flex*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+/* 720p */
+@media (min-width: 1279px){
+    /* Normalizadores */ 
+
+    h1{
+        font-size: 54px;
+        text-align: initial;
+        
+        }
+    h4{
+        font-size: 20px;
+        text-align: initial;
+    }
+    p{
+        font-size: 16px;
+        text-align: initial;
+    }
+    /* Especificas */
+
+    .s1{
+        /*flex*/
+        display: flex;
+    }
+    .s1_content{
+        width: 50%;
+    }
+    .cont{
+        /*flex*/
+        display: flex;
+    }
+    .menu_desk{
+        /*flex*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 80px;
+    }
+    .menu_desk > a{
+        font-size: 16px;
+        margin-right: 25px;
+    }
+    .login{
+        margin-left: 80px;
+        /*flex*/
+        display: flex;
+    }
+    .login a{
+        margin-right: 15px;
+        font-size: 16px;
+    }
+    
+    .menu_mob{
+        display: none;
+    }
+}
+
+

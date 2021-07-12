@@ -1,0 +1,20 @@
+.padre{
+    width: 600px;
+    height: 600px;
+    border: 5px solid black;
+    margin: 100px auto;
+    /* grid */
+    /* El grid solo va al padre, es igual para todos. */
+    display: grid; 
+    grid-template-columns: 200px 200px 200px; 
+    /* cada 200px son las columnas */
+    grid-template-rows:  1fr 2fr 1fr;/* repeat(Cantidad,Valor) repeat(4,1fr) */  /* fr fraccion de espacio disponible */
+    grid-gap: 10px; /* debemos poner de medida el Fr para  */
+}
+
+.hijo{
+    background-color: darkred;
+    color: white;
+    border: thin solid white;
+    font-size: 30px;
+}

@@ -1,0 +1,17 @@
+*{
+    outline: 2px dashed purple
+}
+
+section{
+    height: 100vh;
+}
+.row{
+    height: 100%;
+}
+.r1{
+    height: 100%;
+}
+
+.r2 .row{
+    height: 50%;
+}

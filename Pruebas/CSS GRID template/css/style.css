@@ -1,0 +1,82 @@
+/* Parametros */
+    
+/* Normalizadores */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: 2px dashed purple;
+}
+a{
+    text-decoration: none;
+    color: white;
+    /*flex*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Reglas recursivas */
+
+/* Reglas generales */
+header {
+    grid-area: header;
+    background: #000
+}
+
+footer {
+    grid-area: footer;
+    background: #000;
+}
+/* Reglas Especificas */
+.frame{
+    /*Grid*/
+    display:grid;
+    grid-template-columns: 0.8fr .2fr ;
+    grid-template-rows: 100px 500px 120px;
+    grid-template-areas: "header header"
+                         "home-main home-aside"
+                         "footer footer";
+}/* Cada fila son unas comillas, se pone el nombre de la etiqueta tantas veces como estructura quieres que ocupe */
+.home-main{
+    grid-area: home-main;
+    background: #417314;
+    /*Grid*/
+    display:grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: repeat(2,1fr);
+}
+.home-aside{
+    grid-area: home-aside;
+    background: #353637;
+}
+/* Responsive */
+@media (max-width: 768px){
+    .frame{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 500px 300px 120px;
+        grid-template-areas: "header"
+                             "home-main"
+                             "home-aside"
+                             "footer";
+    }
+    .home-aside{
+        /*Grid*/
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr;
+    }
+    .home-aside div{
+        height: initial;
+    }
+}
+
+@media (max-width: 425px){
+    .home-main
+    .home-aside{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .home-aside div
+}
+    

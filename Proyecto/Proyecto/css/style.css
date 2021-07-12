@@ -25,7 +25,11 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    outline: 1px dashed purple;
+    /* outline: 1px dashed purple; */
+}
+.marco{
+    width: 100%;
+    max-width: 1920px;
 }
 a{
     text-decoration: none;
@@ -39,6 +43,18 @@ h1{
     font-size: 29px;
     line-height: 105%;
 }
+h2,h5{
+    font-family: 'MaisonNeue-mono', Arial, Helvetica, sans-serif;
+    font-size: .75rem;
+    color: #333;
+}
+
+p{
+    font-family: 'MaisonNeue-Light', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
 /* Reglas recursivas */
 
 /* Reglas generales */
@@ -74,10 +90,197 @@ header{
     font-size: 14px;
 }
 /* Reglas Especificas */
-.s1{
+
+/*----------------------*/
+       /*- HOME -*/
+/*----------------------*/
+.s1-home{
+    height: 763px;
+    position: relative;
     padding: 0px 5%;
+    z-index: 5;
 }
-.s1 h1{
-    padding-top: 105px;
+.s1-home p{ 
+    position: relative;
+    padding-top: 130px;
+    font-family: 'MaisonNeue-light', Arial, Helvetica, sans-serif;
+    font-size: calc(11vw - 9px);
+    line-height: 105%;
+    z-index: 5;
 }
+
+.imageniz-home{
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: calc(50vh + 30px);
+    left: 0;
+    background-image: url("../img/imageniz.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+}
+.imagencen-home{
+    width: 60%;
+    height: 35%;
+    position: absolute;
+    top: calc(50vh + 180px);
+    left: 18vw;
+    background-image: url("../img/imagencen.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.imagendr-home{
+    width: 40%;
+    height: 35%;
+    position: absolute;
+    top: 50vh;
+    right: 0;
+    background-image: url("../img/imagendr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+.s2-home{
+   padding: 70px 5% ;
+}
+.s2-home ul{
+    padding-top: 16px;
+    list-style: none;
+    font-family: 'MaisonNeue-light', Arial, Helvetica, sans-serif ;
+    font-size: 24px;
+    color: #000;
+}
+.s2-home div{
+    padding: 30px 0 0 0;
+}
+.s2-home p {
+    width: 84%;
+    padding: 16px 0 0 0;
+}
+.separador-home{
+    width: 100%;
+    padding: 60px 0 40px 0;
+}
+.separador-home h5{
+    text-align: center;
+    padding: 0 0 10px 0;
+}
+
+/*----------------------*/
+/*- TEXTO INFINITO -*/
+/*----------------------*/
+
+@-webkit-keyframes ticker {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+  
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+}
+  
+@keyframes ticker {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+  
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+      }
+}
+  
+.ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    height: 4rem;
+    padding-left: 100%;
+    box-sizing: content-box;
+}
+.ticker {
+    overflow: hidden;
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;  
+    white-space: nowrap;
+    cursor: grab;
+    padding-right: 100%;
+    box-sizing: content-box;
+    -webkit-animation-iteration-count: infinite; 
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 55s;
+    animation-duration: 55s;
+}
+.ticker__item {
+    overflow: hidden;
+    display: inline-block;
+    padding: 0 10px;
+    font-family: 'MaisonNeue-Book', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #000;   
+}
+.ticker-wrap:active .ticker {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+    }
+
+/*----------------------*/
+/*- FIN TEXTO INFINITO -*/
+/*----------------------*/
+
+.proyectos-home {
+    width: 100%;
+}
+.proyectos-home h5{
+    text-align: center;
+}
+.proyectos-home h5::after{
+    content: '';
+    position: relative;
+    display: block;
+    width: 1px;
+    height: 70px;
+    margin: 25px auto 0;
+    background-color: #D1D1D1;
+}
+
+/*----------------------*/
+/*- TEXTO ANIMADO -*/
+/*----------------------*/
+
+.reveal {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30px, 0);
+            transform: translate3d(0, 30px, 0);
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, transform 1s;
+    transition: opacity 1s, transform 1s, -webkit-transform 1s;
+  }
+  .reveal_visible {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+
+/*----------------------*/
+/*- FIN TEXTO ANIMADO -*/
+/*----------------------*/
+
 /* Responsive */

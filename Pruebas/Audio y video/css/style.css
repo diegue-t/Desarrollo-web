@@ -1,0 +1,53 @@
+/* Parametros */
+    
+/* Normalizadores */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: 2px dashed purple;
+}
+/* Reglas recursivas */
+
+/* Reglas generales */
+
+/* Reglas Especificas */
+.s1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    /*flex*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s1 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+.overlay-video{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+.s1-content{
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 4;
+}
+.s1-content h1{
+    font-size: 72px;
+    font-family: sans-serif;
+}
+/* Responsive */
